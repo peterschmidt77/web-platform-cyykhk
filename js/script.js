@@ -13,6 +13,7 @@ $(function () {
   $('#btnGruppe3').text(gruppen[2].name);
   $('#btnGruppe4').text(gruppen[3].name);
   $('#btnGruppe5').text(gruppen[4].name);
+  $('#btnGruppe6').text(gruppen[5].name);
 });
 
 $('.start').click(function () {
@@ -241,5 +242,9 @@ $('#btnGruppe4').click(function () {
 });
 $('#btnGruppe5').click(function () {
   selectedGruppe = 5;
+  prepareQuestions();
+});
+$('#btnGruppe6').click(function () {
+  selectedGruppe = 6;
   prepareQuestions();
 });
